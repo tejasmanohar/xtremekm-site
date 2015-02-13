@@ -1,0 +1,32 @@
+/*==========================================================================================
+Green CSS File
+This file contains styles related to the colour scheme of the theme
+==========================================================================================
+	1.	Link Colours
+	2.	Header
+==========================================================================================*/
+
+/*==========================================================================================
+	1.	Link Colours
+==========================================================================================*/
+#logo a:hover { color: #444444; }
+/*==========================================================================================
+	2.	Header
+==========================================================================================*/
+#header-bottom { border-bottom: 1px solid #e8e8e8; }
+#header-search input { color: #7b7b7b; }
+#header-search input:focus { color: #444444; }
+#primary-nav ul a { color: #AFAFAF; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1); }
+#primary-nav ul a:hover { color: #177CCE; }
+#header-search, #primary-nav ul a:hover, #primary-nav ul li.current-menu-item a { background: rgba(0, 0, 0, 0.4); }
+/*#header-search input { background: url(../images/light/search_bg.png) no-repeat left center; }*/
+#primary-nav ul ul { border-top: 3px solid #177cce; background: #fff; }
+#primary-nav ul ul li.sfHover ul a, #primary-nav ul ul a { color: #7c7c7c; }
+#primary-nav ul ul li.sfHover ul a:hover, #primary-nav ul li li.sfHover a, #primary-nav ul ul a:hover { color: #177CCE; text-shadow: 0 1px 1px  rgba(0, 0, 0, 0.4); }
+/*#primary-nav ul li a .sf-sub-indicator { background: url(../images/light/drop_down_arrow.png) no-repeat; }*/
+/*#primary-nav ul li li a .sf-sub-indicator { background: url(../images/light/drop_across_arrow.png) no-repeat; }*/
+#primary-nav ul li li a:hover .sf-sub-indicator, #primary-nav ul li li.sfHover a .sf-sub-indicator { background: url(../images/light/drop_across_arrow.png) no-repeat -3px 0; }
+/*#header-search input { background: url(../images/light/search_bg.png) no-repeat left center; }*/
+#slider .entry-content a, #slider .entry-content h1, #slider .entry-content h2, #slider .entry-content h3, #slider .entry-content h4, #slider .entry-content h5, #slider .entry-content h6 { color: #444444; }
+#slider .entry-content { color: #7b7b7b; }
+#slider .entry-content a:hover { color: #000; }
