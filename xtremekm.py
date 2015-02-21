@@ -22,10 +22,15 @@ class Handler(webapp2.RequestHandler):
     def render(self, template, **kw):
         self.write(self.render_str(template, **kw))
 
+class Schedule(Handler):
+
+    def get(self):
+        self.render("schedule.html")
+
 class MainPage(Handler):
 
     def get(self):
         self.render("index.html")
 
-application = webapp2.WSGIApplication([('/', MainPage)], debug=True)
+application = webapp2.WSGIApplication([('/', MainPage), ('/schedule', Schedule)], debug=True)
 

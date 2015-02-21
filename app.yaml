@@ -21,6 +21,9 @@ handlers:
 - url: /fonts
   static_dir: fonts
 
+- url: /plugins
+  static_dir: plugins
+
 - url: /.*
   script: xtremekm.application
 

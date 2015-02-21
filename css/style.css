@@ -134,8 +134,11 @@ h6 { font-size: 10px; line-height: 16px; }
 .home #primary { padding: 0; }
 .layout-2cl #primary { float: right; }
 #content { background: #ffffff; padding: 1px; -webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.5); box-shadow:0 2px 4px rgba(0, 0, 0, 0.5); }
-#content-inner { width: 940px; margin: 0 auto; padding-bottom: 59px; }
+#content-inner { width: 940px; margin: 0 auto;}
+.content-inner { width: 940px; margin: 0 auto;}
 .home #content-inner { padding: 0 0 20px 0; }
+.home .content-inner { padding: 0 0 20px 0; }
+.top {}
 .home #content { padding-top: 1px; }
 #sidebar { float: right; width: 268px; padding: 13px 0 0 0; }
 .layout-2cl #sidebar { float: left; }
@@ -147,9 +150,9 @@ h6 { font-size: 10px; line-height: 16px; }
 
 #header { -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 .tz-light #header, .home #header { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-.header-inner { width: 940px; margin: 0 auto; padding: 0; }
+.header-inner { width: 940px; margin: 0 auto; margin-bottom: 17px ; padding: 0; }
 .header-slider { width: 1280px; margin: 0 auto; padding: 0; }
-#header-top { background-image: url('../images/concrete_wall_2.jpg') ; background-color: #d7d7d7 ; border-top: 2px solid #206199; border-bottom: 1px solid #fff; }
+#header-top { background-image: url('../images/concrete_wall_2.jpg') ; background-color: #d7d7d7 ; border-top: 2px solid #206199; border-bottom: 1px solid #fff; /*margin-bottom: 15px;*/}
 #header-bottom { padding: 0; background-color:#1a1a1a; }
 #logo { margin: 0 33px 0 0; float: left; width: 380px ; height: 110px ; }
 #nav-top { background: url(../images/dark_leather.png) repeat #191919; height: 50px; -webkit-box-shadow: 0 0 4px #111; -moz-box-shadow: 0 0 4px #111; box-shadow: 0 0 4px #111; }
@@ -176,6 +179,7 @@ img.israel { background: url('images/flags/il.png') no-repeat #fff;}
 #pagination-slider { position: absolute; width: 950px; margin: 0 0 0 165px; height: 164px; }
 #dots { position: absolute; width: 940px; height: 50px; }
 .home #content-inner.dots-enabled { margin-top: 40px; padding: 40px 0 30px 0; }
+.home .content-inner.dots-enabled { margin-top: 40px; padding: 40px 0 30px 0; }
 #dots .pagination { margin: 22px auto 0 0; float: left; left: 50%; max-width: 940px; position: relative; }
 #dots .pagination li { float: left; margin: 0 5px 0 0; position: relative; right: 50%; }
 #dots .pagination li a { display: block; background: url(images/slider_nav.png); width: 8px; height: 8px; text-indent: -9999px; }
