@@ -907,6 +907,21 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
 .shell1 { width: 940px; margin: 0 auto; }
 /* Spotlight Section */
 
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .schedule {
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  position: relative;
+  left: 50%;
+}
 
 .spotlight-section { width: 100%; background: #fff; display: block; *zoom: 1; padding: 49px 0 0px 0; box-shadow: 0 0 25px rgba(0,0,0,0.8); margin-bottom: 37px; text-align: justify;}
 .spotlight-section:after { content: ''; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }

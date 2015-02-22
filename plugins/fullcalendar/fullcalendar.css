@@ -582,6 +582,8 @@ a.fc-more:hover {
 	float: left;
 }
 
+.fc-toolbar .fc-left h2 { font-family: 'Oswald'; font-weight: 600; font-size: 28px; line-height: 32px; color: #363636; text-transform: uppercase; text-align: center; padding: 0; margin: 0; }
+
 .fc-toolbar .fc-right {
 	float: right;
 }
@@ -907,6 +909,9 @@ be a descendant of the grid when it is being dragged.
 	z-index: 2; /* above the bg */
 }
 
+.fc-content {
+	font-family: 'Times New Roman'; font-size: 14px; color: #fff; text-align: center; padding: 0; margin: 0; }
+}
 .fc-time-grid-event .fc-time,
 .fc-time-grid-event .fc-title {
 	padding: 0 1px;
