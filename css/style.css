@@ -104,7 +104,7 @@ a { text-decoration: none; color: #177cce; }
 a:hover { text-decoration: underline; }
 a img { border: none; }
 p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form, .gallery-row, .post-thumb, .author-bio, #logo { margin-bottom: 20px; }
-.hentry, .navigation-links, .hfeed, .pinglist { margin-bottom: 40px; }
+.hentry, .navigation-links, .hfeed, .pinglist { margin-bottom: 40px;}
 .widget .children, .entry-content ol ol, .entry-content ol ul, .entry-content ul ul, .comment-body ol ol, .comment-body ol ul, .comment-body ul ul, .widget ul ul { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 600; padding: 0 0 20px 0; }
 h1 { font-size: 48px; line-height: 28px; }
@@ -920,6 +920,15 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
     position: relative;
     left: 50%;
 }
+.float_center > .shell2 {
+    
+    margin-top: 60px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+}
+
+.shell2 h2 { font-family: 'Oswald'; font-weight: 600; font-size: 28px; line-height: 32px; color: #363636; text-transform: uppercase; text-align: left; padding: 0; margin: 0; }
 
 .spotlight-section { width: 100%; background: #fff; display: block; *zoom: 1; padding: 49px 0 0px 0; box-shadow: 0 0 25px rgba(0,0,0,0.8); margin-bottom: 37px; text-align: justify;}
 .spotlight-section:after { content: ''; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
