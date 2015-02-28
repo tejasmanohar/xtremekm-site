@@ -903,7 +903,7 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
 /*-----------------------------------------------------------------------------------*/
 
 .bg-white {background-color: #fff; }
-.shell { width: 1200px; margin: 0 auto; }
+.shell { width: 1200px; margin: 0 auto; min-width:1100px; }
 .shell1 { width: 940px; margin: 0 auto; }
 /* Spotlight Section */
 
@@ -914,7 +914,7 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
   text-align: left;
 }
 .float_center > .schedule {
-    width: 1200px;
+    width: 1100px;
     margin-top: 60px;
     margin-bottom: 100px;
     position: relative;
