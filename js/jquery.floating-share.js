@@ -75,9 +75,9 @@
     });
 
     var networks = {
-        "facebook" : { className: "feysbuk", url:"https://www.facebook.com/sharer/sharer.php?u={url}&t={title}" },
-        "twitter": { className: "tivitir", url:"https://twitter.com/home?status={url}" },
-        "google-plus": { className: "gogil", url: "https://plus.google.com/share?url={url}" },
+        "facebook" : { className: "feysbuk", url:"https://www.facebook.com/pages/Round-Rock-Krav-Maga/177345052278744" },
+        "twitter": { className: "tivitir", url:"https://twitter.com/kravmagasdt" },
+        "google-plus": { className: "gogil", url: "https://plus.google.com/102962678478976591677/about" },
         "linkedin":  { className: "linktin", url: "https://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}&summary={description}&source=" },
         "envelope":  { className: "meyil", url: "mailto:asd@asd.com?subject={url}" },
         "pinterest":  { className: "pinter", url: "https://pinterest.com/pin/create%2Fbutton/?url={url}" },
@@ -87,12 +87,14 @@
     var places = ["top-left", "top-right"];
 
     function openPopUp(url, title, width, height){
-        var w = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-        var h = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-        var left = ((w / 2) - (width / 2)) +  10;
-        var top = ((h / 2) - (height / 2)) +  50;
-        var userWindow = window.open(url, title, 'scrollbars=yes, width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
-        userWindow.focus();
+        var win = window.open(url, '_blank');
+        win.focus()
+        //var w = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+        //var h = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+        //var left = ((w / 2) - (width / 2)) +  10;
+        //var top = ((h / 2) - (height / 2)) +  50;
+        //var userWindow = window.open(url, title, 'scrollbars=yes, width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
+        //userWindow.focus();
     }
 
     function setShareCount(network,url,$component){
