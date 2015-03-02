@@ -906,6 +906,7 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
 .shell { width: 1200px; margin: 0 auto; min-width:1100px; }
 .shell1 { width: 940px; margin: 0 auto; }
 .shell3 { width: 1050px; margin: 0 auto; }
+.shell4 {width: 800px;}
 /* Spotlight Section */
 
 .float_center {
@@ -929,7 +930,17 @@ hr:before { height:20px; top:2px; width:95%; background:url(../images/gradient-b
     left: 50%;
 }
 
+.float_center > .shell3 {
+   
+    margin-top: 60px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+}
+
 .shell2 h2 { font-family: 'Oswald'; font-weight: 600; font-size: 28px; line-height: 32px; color: #363636; text-transform: uppercase; text-align: left; padding: 0; margin: 0; }
+.shell3 h2 { font-family: 'Oswald'; font-weight: 600; font-size: 18px; line-height: 32px; color: #363636; text-align: left; padding: 0; margin: 0;}
+.shell3 h1 { font-family: 'Oswald'; font-weight: 600; font-size: 28px; line-height: 32px; color: #363636; text-transform: uppercase; text-align: left; padding: 0; margin: 0; }
 
 .instructors h2 { font-family: 'Oswald'; font-weight: 600; font-size: 28px; line-height: 32px; color: #363636; text-transform: uppercase; text-align: left; padding: 0; margin: 0; }
 .instructors h3 { font-family: 'Oswald'; font-weight: 600; font-size: 16px; line-height: 32px; color: #383838; text-align: left; padding: 0; margin: 0; }
