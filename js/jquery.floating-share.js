@@ -162,7 +162,7 @@
         $("body").floatingShare({
             place: "top-left", // alternatively top-right
             counter: true, // set to false to hide counters of pinterest, facebook, twitter and linkedin
-            buttons: ["facebook","twitter","google-plus","linkedin"],
+            buttons: ["facebook","twitter","google-plus"],
             title: document.title, // your title, default is current page's title
             url: "#",  // your url, default is current page's url
             text: "share with ", // the title of a tags
