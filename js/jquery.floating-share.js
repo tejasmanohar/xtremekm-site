@@ -10,6 +10,7 @@
 
     var pluginName = "floatingShare",
         defaults = {
+
             place: "top-left",
             counter: true,
             buttons: ["facebook","twitter","google-plus","linkedin","envelope"],
