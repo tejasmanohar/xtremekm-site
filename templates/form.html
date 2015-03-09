@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Xtreme Krav Maga | Free Sign Up</title>
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div id="content">
+    <form method="post" action="/guestform">
+
+      <b>First Name:</b>
+      <input type="text" name="first_name" value={{firstname}} {%if resubmit%}readonly{%endif%}>
+      <br><br>
+
+      <b>Last Name:</b>
+      <input type="text" name="last_name" value={{lastname}} {%if resubmit%}readonly{%endif%}>
+      <br><br>
+
+      <b>Email:</b>
+      <input type="text" name="email" value={{email}} {%if resubmit%}readonly{%endif%}>
+      <br><br>
+        
+      <b>Phone:</b>
+      <input type="text" name="phone" value={{phone}} {%if resubmit%}readonly{%endif%}>
+      <br><br>
+      
+      <b>Date:</b>
+      <input type="text" id="datepicker" />
+      <br><br>
+      
+      {%if resubmit%}
+        <input type="hidden" name="resubmit" value="True">
+      {%endif%}
+
+      <div id="class_list"></div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <br>
+
+  <b>{{error}}</b>
+
+</body>
+
+  <script type="text/javascript">
+
+    $(document).ready(
+      
+      function () {
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,//this option for allowing user to select month
+            changeYear: true, //this option for allowing user to select from year range
+            minDate: 0,
+
+            onSelect: function(dateText) {
+              
+              var isoDate = new Date(dateText).toISOString();
+              isoDate = isoDate.substring(0, 11);
+
+              var upperTime = isoDate + "23:59:59-06:00";
+              var lowerTime = isoDate + "00:00:00-06:00";
+
+              var base_url = "https://www.googleapis.com/calendar/v3/calendars/sq4sajp08otscv9q326gmfh9a8@group.calendar.google.com/events?timeMin="
+
+              base_url = base_url.concat(lowerTime);
+              base_url = base_url.concat("&timeMax=");
+              base_url = base_url.concat(upperTime);
+              base_url = base_url.concat("&key=AIzaSyAYV45S1CUE6V8eKAF2wxHcFllrf_PrLyA");
+
+              var class_list = document.getElementById("class_list");
+
+              $.get(base_url, function( data ) {
+
+                class_list.innerHTML = "";
+
+                for (i = 0; i < data["items"].length; i++) { 
+
+                  if (data["items"][i]["status"] != "cancelled")
+                  {
+                    var input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = 'free_class';
+                    input.value = data["items"][i]["summary"];
+
+                    var text = document.createTextNode(data["items"][i]["summary"]);
+                    var mybr = document.createElement('br');
+
+                    class_list.appendChild(input);
+                    class_list.appendChild(text);
+                    class_list.appendChild(mybr);
+                  }
+                }
+
+              }, "json" );
+          }
+        });
+      })
+  </script>
+
+</html>
