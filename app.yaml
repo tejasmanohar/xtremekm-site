@@ -16,6 +16,9 @@ handlers:
 - url: /css
   static_dir: css
 
+- url: /templates
+  static_dir: templates
+
 - url: /images
   static_dir: images
 
@@ -24,6 +27,14 @@ handlers:
 
 - url: /fonts
   static_dir: fonts
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /(.*)
+  static_files: \1
+  upload: (.*)
 
 - url: /plugins
   static_dir: plugins
